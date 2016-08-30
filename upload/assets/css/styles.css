@@ -1,0 +1,164 @@
+div.no-conflict-extension-upload {
+    font-family: arial;
+    font-size: 14px;
+    text-align: center;
+}
+
+div.no-conflict-extension-upload .message-bottom {
+    display: block;
+    position: absolute;
+    top: 0;
+    background-color: #e1e1e1;
+    width: 100%;
+}
+
+div.no-conflict-extension-upload .message-bottom figure {
+    display: inline-block;
+    zoom: .2;
+    vertical-align: middle;
+    margin: 0 25px;
+}
+
+div.no-conflict-extension-upload .message-bottom .span-button {
+    background-color: #FFF;
+}
+
+div.no-conflict-extension-upload .message img {
+    display: block;
+    margin: 10px auto;
+}
+
+div.no-conflict-extension-upload #file {
+    display: none;
+}
+
+div.no-conflict-extension-upload .span-button {
+    background: #E1E1E1;
+    border: solid 1px #676767;
+    cursor: pointer;
+    display: inline-block !important;
+    margin: 10px auto;
+    padding: 5px 10px;
+}
+
+div.no-conflict-extension-upload .remove-attach {
+    width: 25px;
+    background: #FFF;
+    border-radius: 30px;
+    height: 25px;
+    box-shadow: 0px 0px 10px -4px #000;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    line-height: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+div.no-conflict-extension-upload #dropbox{
+    border-radius:3px;
+    position: relative;
+    margin:80px auto 90px;
+    min-height: 290px;
+    min-width: 990px;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+
+
+div.no-conflict-extension-upload #dropbox .message{
+    text-align: center;
+    display: block;
+}
+
+div.no-conflict-extension-upload #dropbox .message i{
+    color:#ccc;
+    font-size:10px;
+}
+
+div.no-conflict-extension-upload #dropbox:before{
+    border-radius:3px 3px 0 0;
+}
+
+
+
+/*-------------------------
+        Image Previews
+--------------------------*/
+
+
+
+div.no-conflict-extension-upload #dropbox .preview{
+    width:245px;
+    height: 215px;
+    float:left;
+    margin: 55px 0 0 60px;
+    position: relative;
+    text-align: center;
+}
+
+div.no-conflict-extension-upload #dropbox .preview img{
+    max-width: 240px;
+    max-height:180px;
+    border:3px solid #fff;
+    display: block;
+
+    box-shadow:0 0 2px #000;
+}
+
+div.no-conflict-extension-upload #dropbox .imageHolder{
+    display: inline-block;
+    position:relative;
+}
+
+div.no-conflict-extension-upload #dropbox .uploaded{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    display: none;
+}
+
+div.no-conflict-extension-upload #dropbox .preview.done .uploaded{
+    display: block;
+}
+
+
+
+/*-------------------------
+        Progress Bars
+--------------------------*/
+
+
+
+div.no-conflict-extension-upload #dropbox .progressHolder{
+    position: absolute;
+    background-color:#252f38;
+    height:12px;
+    width:100%;
+    left:0;
+    bottom: 0;
+
+    box-shadow:0 0 2px #000;
+}
+
+div.no-conflict-extension-upload #dropbox .progress{
+    background-color:#2586d0;
+    position: absolute;
+    height:100%;
+    left:0;
+    width:0;
+
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.4) inset;
+
+    -moz-transition:0.25s;
+    -webkit-transition:0.25s;
+    -o-transition:0.25s;
+    transition:0.25s;
+}
+
+div.no-conflict-extension-upload #dropbox .preview.done .progress{
+    width:100% !important;
+}
